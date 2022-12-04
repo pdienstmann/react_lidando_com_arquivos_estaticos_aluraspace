@@ -1,0 +1,41 @@
+@import-normalize;
+@import "./_variaveis";
+
+@font-face {
+  font-family: 'GandhiSansRegular';
+  src: local("GandhiSansRegular"), url("./../assets/fontes/GandhiSans-Regular.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GandhiSansBold';
+  src: local("GandhiSansBold"), url("./../assets/fontes/GandhiSans-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  background-image: linear-gradient($azul-escuro, $azul-claro);
+  box-sizing: border-box;
+  font-family: 'GandhiSansRegular', Fallback, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(#041833, #154580);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #154580;
+  border-radius: 20px;
+}
+
+
